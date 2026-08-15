@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#07070d">
+<meta name="description" content="A private little corner of the internet made for Chanda.">
+<title>Chanda — My Moon</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<canvas id="stars" aria-hidden="true"></canvas><div class="noise" aria-hidden="true"></div>
+
+<header>
+  <a class="brand" href="#" onclick="showPage('home');return false;">🌙 Chanda <span>MY MOON</span></a>
+  <nav aria-label="Main navigation">
+    <button class="nav-btn active" data-page="home">Home</button>
+    <button class="nav-btn" data-page="memories">Memories</button>
+    <button class="nav-btn" data-page="letter">My Letter</button>
+  </nav>
+</header>
+
+<main>
+<section id="page-home" class="page active">
+  <div class="hero">
+    <div class="hero-copy">
+      <div class="kicker">A little universe made for one person</div>
+      <h1>Chanda<em>my moon</em></h1>
+      <div class="hero-rule"></div>
+      <p class="hero-lede">Just like the moon lights up the darkest sky without even trying, you light up my entire world simply by being you.</p>
+      <p class="distance">384,400 km is how far the moon is from the Earth.<br>And you are 58,20,000 cm away from me.<br>No matter the distance — she is always there.</p>
+      <div class="cta-row">
+        <a class="cta primary" href="#" onclick="showPage('memories');return false;">See My memories</a>
+        <a class="cta secondary" href="#" onclick="showPage('letter');return false;">Read My letter</a>
+      </div>
+    </div>
+    <div class="hero-gallery" aria-label="A selection of Chanda's photos">
+      <div class="hero-card big"><img src="assets/memory-01.jpg" alt="Chanda smiling" fetchpriority="high"><span class="tag">the smile</span></div>
+      <div class="hero-card"><img src="assets/memory-45.jpg" alt="Chanda outdoors"><span class="tag">sunshine</span></div>
+      <div class="hero-card"><img src="assets/memory-05.jpg" alt="Chanda at sunset"><span class="tag">golden hour</span></div>
+      <div class="hero-card"><img src="assets/memory-07.jpg" alt="Chanda in the mountains"><span class="tag">ALWAYS beautiful</span></div>
+      <div class="hero-card"><img src="assets/memory-14.jpg" alt="Chanda smiling"><span class="tag">her</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="page-memories" class="page">
+  <div class="section">
+    <div class="section-head">
+      <div class="eyebrow">A little archive of You</div>
+      <h2>My <em>Moments</em></h2>
+      <p>Every time I look at your photos, my world stops for a second. These are the memories I hold closest to my heart.</p>
+    </div>
+    <div class="filters">
+      <button class="filter active" onclick="setFilter('All',this)">All</button>
+      <button class="filter" onclick="setFilter('Glow',this)">GLOW ✨</button>
+      <button class="filter" onclick="setFilter('Charm',this)">CHARM 🌸</button>
+      <button class="filter" onclick="setFilter('Smiles',this)">Smiles👀</button>
+      <button class="filter" onclick="setFilter('Her',this)">HER ♡</button>
+      <button class="filter" onclick="setFilter('Moments',this)">MOMENTS 🕊️</button>
+    </div>
+    <div id="memory-grid" class="masonry"></div>
+    
+  </div>
+</section>
+
+<section id="page-letter" class="page">
+  <div class="letter-hero">
+    <img src="assets/memory-51.jpg" alt="Chanda near sea">
+    <div class="letter-title"><h2>For <em>Chanda</em></h2></div>
+  </div>
+  <div class="letter-body">
+  <p class="l-opener reveal">My Dearest Chanda,</p>
+  <p class="l-p reveal">
+    I don't know who named the moon Chanda first — but whoever it was (me),
+    they must have met some version of you. Because you are <strong>everything</strong> the moon is — soft,
+    luminous, mysterious, and impossibly beautiful. You shine brightest in the world of darkness,
+    and you pull me like the tide, gently and completely.
+  </p>
+  <div class="l-div"></div>
+  <p class="l-p reveal">
+    I love the way you laugh without holding back. I love the way you are.
+    I love the way you look at a sunset,
+    and make it feel like the world painted it just for you.
+    <strong>You make ordinary moments extraordinary.</strong>
+  </p>
+  <div class="l-div"></div>
+  <p class="l-p reveal">
+    Every picture of you is a reminder of how lucky I am — to know you,
+    to love you, and to be loved by you. Whether you're in a stunning saree,
+    on top of a mountain, wearing sunglasses like a superstar,
+    or just being your messy, beautiful, genuine self — <strong>you are always, always the most
+    beautiful thing in the frame.</strong>
+  </p>
+  <div class="l-div"></div>
+  <p class="l-p reveal">
+    I love you, Chanda. I love you because in you, I found everything I ever wanted.
+    You are caring, giving, idiotically and deliciously feminine, wonderfully intelligent, and wonderfully silly as well.
+    I am totally and madly in love with your hair, eyes, voice, nose, smile, laugh, the warmth that I feel around you, and <strong>YOU.</strong><br>
+    I love you in a way that would worry a therapist and thrill a poet.
+  </p>
+  <div class="l-div"></div>
+  <p class="l-p reveal">
+    I want nothing else in this life than to be with you — to listen and watch you all the time,
+    to admire your beautiful voice and your beauty, to argue and laugh with you,
+    to spend my entire life with you, and to take care of you.
+  </p>
+  <div class="l-div"></div>
+  <p class="l-p reveal">
+    Every single time I think of October 10th, you walking towards me — that was the moment of my life.
+    Everything has been better since you, and everything will be with you and only you. Because of you,
+    I experience what true happiness is and will be for my entire life. With you,
+    I can be delusionally optimistic.<br><strong>You complete me, Chanda Chaturvedi.</strong>
+  </p>
+  <div class="l-div"></div>
+  <p class="l-p reveal">
+    By all the laws of nature and the universe, we were meant to belong to different skies—
+    you, my gentle<strong> Chanda</strong>, pure, tranquil, and glowing in the quiet solace of the night, and I,
+    born to be Aditya, the restless, burning light of the day.<br> Nature dictated that I could only ever watch You from afar.
+    passing by like silent tides on opposite sides of the sky.<br>
+    You had every reason to turn away, every reason to remain in the calm stillness of your world while I stayed in mine.<br><br>
+    But God looked at the laws of nature and decided to break them all for us.<br>
+    He knew that a sun without its <strong>Moon</strong> is just a burning flame with nowhere to rest, and a moon without her sun has no light to share.
+    So He rewrote the cosmos.<br> The universe chose to rewrite its own celestial rules just so two stars from opposite worlds
+    could finally eclipse into one—shattering the distance and destining us not just to cross paths for a fleeting moment,
+    but to belong to each other truly, completely, passionately, undeniably together and forever.
+  </p>
+  <div class="l-div"></div>
+  <p class="l-p reveal">
+    The 'seven minutes' theory says we relive our best memories at the end. I want my whole life to be that memory, 
+    shared with you, lasting even beyond death's door. Life isn't measured by achievements, but by the person who makes your heart feel at <strong>home</strong>
+    you are the memory that stays when everything else fades, i want every second of those seven minutes to be filled with your<strong> charming smile</strong>, your <strong>madly laugh</strong>,your <strong>moodiness</strong>
+    and every quiet moment we've and we will ever share.
+
+  </p>
+  <div class="l-div"></div>
+  <p class="l-sign reveal">— Always yours, with all the stars 🌙✨<BR>& Gulabjamun</p>
+</div>
+</section>
+</main>
+
+<footer>Made with ♥ for Chanda &nbsp;|&nbsp; My Moon, My World &nbsp;|&nbsp; 2026 </footer>
+
+<div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer">
+  <button class="lb-close" onclick="closeLightbox()" aria-label="Close">×</button>
+  <button class="lb-prev" onclick="moveLightbox(-1)" aria-label="Previous">‹</button>
+  <img id="lb-img" src="" alt="">
+  <button class="lb-next" onclick="moveLightbox(1)" aria-label="Next">›</button>
+  <div id="lb-caption" class="lb-caption"></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
