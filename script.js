@@ -152,7 +152,7 @@ const galleryData = [
     "index": 24
   },
   {
-    "src": "assets/memory-24.jpeg",
+    "src": "assets/memory-24.jpg",
     "caption": "Midnight looks good on you. 🌙🖤✨",
     "category": "Moments",
     "index": 25
